@@ -6,6 +6,7 @@
 !!! THIS IS A FORK !!! <br>
 Now working on Windows 10 <br>
 Sometimes R is L and L is R because Windows 10 call both JoyCon "USB GamePad" for some reason <br>
+You can solve this problem by making the user press L and R button so you can tell them apart <br>
 Also you need to install hidapi package using "pip install hidapi" <br>
 !!! THIS IS A FORK !!!
 
