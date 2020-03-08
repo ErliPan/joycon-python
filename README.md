@@ -4,8 +4,9 @@
 ![PyPI - Implementation](https://img.shields.io/pypi/implementation/joycon-python)
 
 !!! THIS IS A FORK !!! <br>
-Now working on Windows 10
-Sometimes R is L and L is R because Windows 10 call both JoyCon "USB GamePad" for some reason
+Now working on Windows 10 <br>
+Sometimes R is L and L is R because Windows 10 call both JoyCon "USB GamePad" for some reason <br>
+Also you need to install hidapi package using "pip install hidapi" <br>
 !!! THIS IS A FORK !!!
 
 Python driver for Nintendo Switch Joy-Con
