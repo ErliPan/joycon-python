@@ -33,6 +33,21 @@ def get_device_ids():
             else:
                 L["product"] = device['product_id']
                 L["vendor"] = device['vendor_id']
+
+
+    #Windows 10 FIX
+    if (R["vendor"] == None and L["vendor"] == None):
+        print("none fix")
+        for device in devices:
+            if "Nintendo" == device["manufacturer_string"]:
+                if R["vendor"] == None:
+                    R["product"] = device['product_id']
+                    R["vendor"] = device['vendor_id']
+                else:
+                    L["product"] = device['product_id']
+                    L["vendor"] = device['vendor_id']
+        
+        
     return {"R": R, "L": L}
 
 
@@ -43,6 +58,7 @@ def get_ids(lr):
     arg: lr : str : put `R` or `L`
     """
     ids = get_device_ids()
+    
     return (ids[lr]["vendor"], ids[lr]["product"])
 
 
